@@ -1,4 +1,4 @@
-\documentclass[1４pt, dvipdfmx]{beamer}
+\documentclass[11pt, dvipdfmx]{beamer}
 
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 %%%%%%%%%%%  package  %%%%%%%%%%%
@@ -479,7 +479,7 @@
 	\begin{align*}
 	\alpha = \dfrac{1}{h} \dfrac{F^{\ddag}}{F_0^{\ddag}} 
 	\end{align*}
-	$h$ はプランクの定数、$F^{\ddag}, F_0^{\ddag}$ は、それぞれ、励起状態及び基底状態の分子の分配関数
+	$h$ はプランクの定数、$F^{\ddag}, F_0^{\ddag}$ は、それぞれ、励起状態および基底状態の分子の分配関数
 \end{frame}
 
 
@@ -487,7 +487,6 @@
 %%%%%%%%%
 \begin{frame}
 \frametitle{Eyring の流動モデル}
-\Large
 応力 $\sigma_s$ が印加された場合、\\セグメント（体積 $v^*$ ）の移動速度 $R$ は、
 \small
 \begin{align*}
@@ -509,7 +508,6 @@
 %%%%%%%%%
 \begin{frame}
 \frametitle{アンドレードの粘度式}
-\large
 %$x \ll 1 \rightarrow \sinh(x) \simeq x$ であるので、
 印加応力が非常に小さいか、粒子が小さいとき、分母の熱ゆらぎに比べて分子が非常に小さいとみなせて、
 \begin{align*}
@@ -518,37 +516,30 @@
 	=2 \alpha \exp \left( - \dfrac{\Delta G}{k_BT} \right) \sigma_s v^*
 \end{align*}
 
-\large
 上式中の $R$ は単位時間あたりの粒子の移動量\\
-そこで、
-$R$ をずりせん断速度 $\dfrac{R}{v^*} = \dot{\gamma}$ とみなせば、\\
-$\eta = \dfrac{\sigma}{\dot{\gamma}}$ より
+
 \end{frame}
 
 %%%%%%%%%
 \begin{frame}
 	\frametitle{アンドレードの粘度式}
-	\large
-	アンドレードの粘度式である下式を得る。
+	そこで、$R$ をずりせん断速度 $\dfrac{R}{v^*} = \dot{\gamma}$ とみなせば、\\
+	$\eta = \dfrac{\sigma}{\dot{\gamma}}$ より、アンドレードの粘度式である下式を得る。
 	\begin{align*}
 	\eta = A \exp \left(\dfrac{\Delta G}{k_BT} \right)
 	\end{align*}
-	
-	\large
+
 	これは、粘度が応力に依存しないというニュートン流動を表している。
-	
 	\end{frame}
 %%%%%%%%%
 \begin{frame}
 \frametitle{ソフトマターの非線形性}
-\large
+
 印加応力が大きい、移動する粒子が大きい場合、
-\normalsize
 \begin{align*}
 \dfrac{\sigma_s v^*}{k_BT} \gg 1 \Rightarrow \exp(x) \\
 \therefore \; R \simeq 2 R_0 \exp \left( \dfrac{ \sigma_s v^*}{k_BT} \right)
 \end{align*}
-\large
 となり、応力に依存した非線形性が生じる。
 
 \begin{alertblock}{ソフトマターの非線形応答}
@@ -565,7 +556,6 @@ $\eta = \dfrac{\sigma}{\dot{\gamma}}$ より
 \begin{frame}
 \frametitle{降伏挙動のモデル}
 
-\Large
 \begin{exampleblock}{ミクロな降伏挙動のモデル}
 \begin{itemize}
 \item
@@ -573,7 +563,6 @@ $\eta = \dfrac{\sigma}{\dot{\gamma}}$ より
 \item
 Eyring の流動モデル
 	\begin{itemize}
-	\large
 	\item
 	活性化エネルギー（$\Delta G$）の山を超えて、\\粒子が移動
 	\item
@@ -589,9 +578,7 @@ Eyring の流動モデル
 \begin{frame}
 \frametitle{降伏応力とせん断速度}
 
-\large
 移動速度 $R$ を引っ張り変形速度 $\dot{\epsilon}$ とみなし、\\ $\dot{\epsilon}_0$ を定数として以下の関係が示せる。
-\normalsize
 	\begin{align*}
 	\dot{\epsilon} 
 	&= \dot{\epsilon}_0 \exp \left( - \dfrac{\Delta G}{RT} \right) 
@@ -607,8 +594,6 @@ Eyring の流動モデル
 		\right] 
 	\propto \log \dot{\epsilon}
 	\end{align*}
-
-\large
 
 この関係は、ガラス転移温度以下での降伏値の挙動を記述できる。
 \end{frame}

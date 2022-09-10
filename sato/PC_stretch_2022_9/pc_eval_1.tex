@@ -72,7 +72,7 @@
 
 \begin{wrapfigure}{r}{0.5\textwidth} %% 図右寄せの場合{r}
 	\includegraphics[width=0.5\textwidth]{fig2.png}
-	\caption{Copied from ref.1}
+	\caption{PC の降伏挙動の変形速度依存性\\Copied from ref.1}
 	\label{fig2}
 \end{wrapfigure}
 
@@ -88,35 +88,46 @@ PCの降伏挙動の速度依存性については過去に検討~\cite{bauwens}
 \end{align}
 なお、$\sigma_e$ は降伏応力（応力の最大値）、$T$ は絶対温度、$k_B$ はボルツマン因子、$v_0$ はせん断体積、$\gamma_0$ $J_0$ はエントロピー因子を含んだ速度定数、 $\dot{\epsilon}$ はひずみ速度、$Q$ は活性化エネルギーに対応する。
 
+\newpage
+
 \section{実験}
-\subsection{予備実験}
+以下に示したように実験を行う。
 \begin{description}
 	\item[サンプル] 
 	以下のPCサンプルを使用する
 	\begin{itemize}
-		\item PC2151
-		\item サンプル形状：
-		\color{blue}
-		\begin{itemize}
-			\item 厚さ
-			\item ダンベル形状
-		\end{itemize}
-		\color{black}
+		\item PC2151, 0.3mm厚
+		\item サンプル形状: 6 mm $\times$ 30 mm [JIS K6251 ダンベル5号の平行部を利用]
 	\end{itemize}
 	\item[試験条件] 
 	以下の条件で測定を行う
 	\begin{itemize}
 		\item 温度条件
 		\begin{itemize}
-			\item 設定温度：室温（一定に設定）、40, 60, 80, 100, 120\textdegree C
-			\item 放置時間：チャンバー中で温度到達後30分以上放置
+			\item 設定温度: 室温（一定に設定）、40, 60, 80, 100, 120\textdegree C
+			\item 放置時間: チャンバー中で温度到達後30分以上放置
 		\end{itemize}
-		\color{blue}
-		\item ヘッドスピード：使用機器の最小から最大の範囲で、一桁に対数スケールで3点以上測定
-		\color{black}
+		\item 試験速度
+		\begin{itemize}
+			\item 500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02  mm/min
+			\item 試験時間: 最短5秒～最大5時間
+		\end{itemize}
+		\item 試験終了条件
+		\begin{itemize}
+			\item 50mm/min以下 $\Leftrightarrow$ ストローク6mm(ε=0.2)
+			\item その他 $\Leftrightarrow$ 破断検知
+		\end{itemize} 
+		\item 測定
+		\begin{itemize}
+			\item 試験力およびストロークを試験機で計測するのみ
+		\end{itemize}
 	\end{itemize}
 	\item[データ処理] 
-	測定終了後、$\dfrac{\sigma_e}{T}$ を ヘッド速度から算出した $\dot{\epsilon}$ の対数に対してプロットし、\eqref{eq1} の関係から A, C, Q それぞれの値を算出する。
+	測定終了後に、以下のようにデータを処理する
+	\begin{itemize}
+		\item 測定終了後、$\dfrac{\sigma_e}{T}$ を ヘッド速度から算出した $\dot{\epsilon}$ の対数に対してプロット
+		\item \eqref{eq1} の関係から A, C, Q それぞれの値を算出する。
+	\end{itemize}
 \end{description}
 
 \begin{thebibliography}{99}
