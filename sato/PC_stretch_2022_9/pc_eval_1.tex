@@ -82,13 +82,15 @@ PCの降伏挙動の速度依存性については過去に検討~\cite{bauwens}
 彼らは、この片対数での線形関係は以下の表式に従っているとしている。
 これは、以前に Eyring が検討したものと表式が異なっているが、この測定条件下ではこちらが妥当となるものとしている。
 \begin{align}
-	\dfrac{\sigma_e}{T} &= \dfrac{4\sqrt{3}k_B}{v_0 \gamma_0} \ln \left(\dfrac{\sqrt{3}}{2 \gamma_0 J_0} \dot{\epsilon} + \dfrac{Q}{RT} \right) \notag \\
-	 &= A [ \ln 2 C \dot{\epsilon} + (Q/RT)]
+	\dfrac{\sigma_e}{T} 
+	% &= \dfrac{4\sqrt{3}k_B}{v_0 \gamma_0} \ln \left(\dfrac{\sqrt{3}}{2 \gamma_0 J_0} \dot{\epsilon} + \dfrac{Q}{RT} \right) \notag \\
+		&= A \left(\ln 2 C \dot{\epsilon} + \dfrac{Q}{RT} \right)
 	 \label{eq1}
 \end{align}
-なお、$\sigma_e$ は降伏応力（応力の最大値）、$T$ は絶対温度、$k_B$ はボルツマン因子、$v_0$ はせん断体積、$\gamma_0$ $J_0$ はエントロピー因子を含んだ速度定数、 $\dot{\epsilon}$ はひずみ速度、$Q$ は活性化エネルギーに対応する。
+% なお、$\sigma_e$ は降伏応力（応力の最大値）、$T$ は絶対温度、$k_B$ はボルツマン因子、$v_0$ はせん断体積、$\gamma_0$ $J_0$ はエントロピー因子を含んだ速度定数、 $\dot{\epsilon}$ はひずみ速度、$Q$ は活性化エネルギーに対応する。
+なお、$\sigma_e$ は降伏応力（応力の最大値）、$T$ は絶対温度、$A, C$ は定数、 $\dot{\epsilon}$ はひずみ速度、$Q$ は活性化エネルギーに対応する。
 
-\newpage
+% \newpage
 
 \section{実験}
 以下に示したように実験を行う。
@@ -110,7 +112,7 @@ PCの降伏挙動の速度依存性については過去に検討~\cite{bauwens}
 		\item 試験速度
 		\begin{itemize}
 			\item 500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02  mm/min
-			\item 試験時間: 最短5秒～最大5時間
+			\item 試験時間: 最短5秒～最大5時間（0.05, 0.02 は省略するかもしれません）
 		\end{itemize}
 		\item 試験終了条件
 		\begin{itemize}
