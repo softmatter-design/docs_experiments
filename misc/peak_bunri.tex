@@ -180,24 +180,36 @@ $p$ がピークトップの位置、$s$ がガウス分布の標準偏差（ス
 
 \subsection{ピークハイトの比較（定量性）}
 
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.4\textwidth]{peaks_multi.png}
+	\caption{近吸収強度の異なるオリジナルスペクトル：測定者には見えない真の値}
+	\label{fig5}
+\end{wrapfigure}
+
 前述のように、二階微分したピークハイトの大きさはプレファクタの影響によりオリジナルのそれとは異なっています。
 しかしながら、「その吸収される光量子量は注目する官能基のモル濃度に比例する」という仮定が成立する範囲においては、同一の分布関数（スペクトル幅に対応する分散が同一）に基づいて吸収強度がモル濃度に比例することになります。
 
-したがって、時間変化のトラジェクトリのように特定の官能基の濃度が時間変化する場合において、異なるサンプル間でのピークハイトの比の関係は微分の有無によらずに保たれるものと考えることができます。
-この関係を図示すると Fig. \ref{fig5}, \ref{fig6} のようになります。
+ここで、時間変化のトラジェクトリのように特定の官能基の濃度が時間変化する場合を考えましょう。
+Fig. \ref{fig5} に、仮想的な「測定者では観測できない真のスペクトル変化」を示しました。
+基準となる $t=0$ におけるピーク高さが、$t=t1$ で半分に、そして $t=t2$ で20\% になったものとしています。
+
+実際の吸収スペクトルの観測では、上記の特性吸収にベースラインの影響が入りますし、測定状態に応じてベースラインの縦シフトも入ってスペクトル全体がずれてきます。
+そのような状態をシミュレートしたものが、Fig.\ref{fig6} です。
+
+このような条件下でも、二階微分を取ったスペクトルのトラジェクトリでのピークハイトを比として評価すれば Fig. \ref{fig7} のようになり、異なるサンプル間でのピークハイトの比の関係は微分の有無によらずに保たれることが確認できます。
 \begin{figure}[htb]
     \begin{minipage}{0.5\hsize}
         \begin{center}
-        \includegraphics[width=.8\textwidth]{peaks_multi.png}
-        \caption{吸収強度の異なるオリジナルスペクトル}
-        \label{fig5}
+        \includegraphics[width=.8\textwidth]{peaks_multi_shifted.png}
+        \caption{ベースラインのドリフトも入った実測スペクトル}
+        \label{fig6}
         \end{center}
     \end{minipage}
     \begin{minipage}{0.5\hsize}
         \begin{center}
         \includegraphics[width=.8\textwidth]{der_2_multi.png}
         \caption{左記を二階微分したスペクトル}
-        \label{fig6}
+        \label{fig7}
         \end{center}
     \end{minipage}
 \end{figure}
